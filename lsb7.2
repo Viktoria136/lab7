@@ -1,0 +1,15 @@
+countries = {
+    "Україна": "Київ",
+    "Польща": "Варшава",
+    "Франція": "Париж",
+    "Німеччина": "Берлін",
+    "Італія": "Рим"
+}
+print("Усі пари «країна — столиця»:")
+for country, capital in countries.items():
+    print(country, "-", capital)
+name = input("\nВведіть назву країни: ").strip().capitalize()
+if name in countries:
+    print("Столиця країни", name, "-", countries[name])
+else:
+    print("Країну не знайдено")
